@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    /* 格式化 */
     html,body{
       height: 100%;
     }
@@ -17,31 +18,39 @@
     p{
       margin: 0;
     }
+    /* 头部 */
     div.top{
       height: 100px;
       background-color: skyblue;
       font-size: 0;
     }
+    /* 主内容区 */
     div.main{
       height: calc(100% - 100px);
       width: 100%;
       font-size: 0;
+      position: relative;
     }
     div.main > div{
       font-size: 16px;
       overflow: auto;
-      display: inline-block;
-      vertical-align: top;
+      position: absolute;
     }
+    /* 边栏 */
     div.aside{
       height: 100%;
       width: 200px;
       background-color: orange;
+      top: 0;
+      left: 0;
     }
+    /* 内容 */
     div.content{
       height: 100%;
       width: calc(100% - 200px);
       background-color: chocolate;
+      top: 0;
+      left: 200px;
     }
   </style>
 </head>
@@ -171,4 +180,4 @@
 </html>
   
 </body>
-</html> 
+</html>
