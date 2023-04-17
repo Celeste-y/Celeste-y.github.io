@@ -1,0 +1,2041 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style type="text/less">
+    @font-face {
+      font-family: MIfont;
+      src: url(./mi-icon-font.ttf);
+    }
+
+    * {
+      margin: 0px;
+      padding: 0px;
+      text-decoration: none;
+      list-style: none;
+      white-space: nowrap;
+
+    }
+
+    body {
+font-family: MIfont;
+      min-width: 1226px;
+    }
+    .diyiye{
+      background-color: rgb(255,255,255);
+    }
+    .dierye{
+      background-color: rgb(245,245,245);
+    }
+    .top-box {
+      background-color: rgb(38, 38, 38);
+
+
+      .top {
+        margin-left: 130px;
+        width: 1226px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(38, 38, 38);
+        position: relative;
+        color: rgb(152, 152, 153);
+        background-color: rgb(38, 38, 38);
+        height: 40px;
+        line-height: 40px;
+        font-size: 12px;
+
+        a{
+          color: rgb(152, 152, 153);
+          background-color: rgb(38, 38, 38);
+          height: 40px;
+          line-height: 40px;
+          font-size: 12px;
+          margin-right: 3px;
+
+          &:hover{
+            color: azure;
+          }
+        }
+
+        span{
+          color: rgb(152, 152, 153);
+          background-color: rgb(38, 38, 38);
+          height: 40px;
+          line-height: 40px;
+          font-size: 12px;
+          margin-right: 3px;
+        }
+
+        .top-box-2 {
+          position: absolute;
+          top: 0px;
+          left: 950px;
+        }
+
+        .top-box-3 {
+          width: 120px;
+          text-align: center;
+          position: absolute;
+          top: 0px;
+          left: 1105px;
+          background-color: #666;
+         }
+      }
+    }
+
+
+    .top-box-3::before {
+      content: " \E60C";
+      position: absolute;
+      left: 10px;
+      font-size: 20px;
+    }
+
+    .bottom {
+      background-color: white;
+      margin-left: auto;
+      margin-right: auto;
+      width: 1226px;
+
+      .bottom-box {
+        height: 77px;
+
+        .bottom-nav{
+          xfloat: right;
+          margin: 20px 0 0 250px;
+          >ul{
+            xfont-size: 0px;
+            >li{
+              display: inline-block;
+              font-size: 16px;
+
+              a{
+                color: #040404;
+                padding: 30px 7px 33px;
+
+                &:hover{
+                  color: rgb(250,103,0);
+                }
+              }
+             }
+          }
+
+        }
+
+
+
+
+        .bottom-nav{
+
+          div{
+            transition: font-size 0.1s cubic-bezier(.38,.49,.86,.2) , height 0.5s cubic-bezier(.38,.49,.86,.2) ;
+            box-shadow: 0 1px 2px #515151;
+            background-color: rgb(255,255,255);;
+            position: absolute;
+            top: 137px;
+            z-index: 9998;
+            left: 0px;
+            width: 100%;
+            height: 0px;
+            font-size: 0px;
+            ul
+            {
+            width: 1226px;
+            font-size: 0px;
+
+            margin: auto;
+            xdisplay: inline-block;
+            }
+            li{
+              width: 204px;
+              display: inline-block;
+            }
+          }
+
+        }
+
+        .bottom-nav>ul>li:nth-child(1):hover>div,
+        .bottom-nav>ul>li:nth-child(2):hover>div,
+        .bottom-nav>ul>li:nth-child(3):hover>div,
+        .bottom-nav>ul>li:nth-child(4):hover>div,
+        .bottom-nav>ul>li:nth-child(5):hover>div,
+        .bottom-nav>ul>li:nth-child(6):hover>div,
+        .bottom-nav>ul>li:nth-child(7):hover>div{
+          transition: none;
+          height: 200px;
+          font-size: 16px;
+          z-index: 9999;
+          ul{
+            font-size: 16px;
+          }
+        }
+
+        .button-box{
+
+
+          margin: 13px 0 0 0px;
+          height: 43.2px;
+          width: 290px;
+          float: right;
+          .button1{
+            display: flex;
+            width: 290px;
+            button{
+              width: 50px;
+              height: 43.2px;
+              font-family: MIfont;
+
+
+              &:hover{
+                background-color: orange;
+              }
+            }
+
+            input {
+              width: 240px;
+              height: 40px;
+            }
+          }
+
+        }
+
+
+
+
+      }
+
+    }
+
+    .logo{
+          background-image: url();
+
+          width: 56px;
+          height: 56px;
+          position: absolute;
+          a{
+            img{
+              height: 56px;
+              width: 56px;
+
+            }
+          }
+        }
+
+/* 导航栏 */
+
+    .nav{
+      margin-left: auto;
+      margin-right: auto;
+      width: 1226px;
+
+      .nav-left{
+        display: inline-block;
+        width: 234px;
+        height: 460px;
+        xmargin-top:100px;
+        xpadding: 20px 0;
+        position: relative;
+        z-index: 1;
+        background-color: rgb(165, 163, 163);
+        >ul{
+          width: 234px;
+          height: 420px;
+          padding: 20px 0;
+          >li{
+            width: 234px;
+            height: 42px;
+            background-color: rgb(165, 163, 163);
+            color: #fff;
+            display: block;
+            position: relative;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 45px;
+
+            &:hover{
+              background-color: orange;
+            }
+            &::after{
+              content: "\E623";
+              font-size: 15px;
+              font-weight: 700;
+              display: inline-block;
+              position: absolute;
+              right: 10px;
+              top: 0;
+              z-index: 1;
+
+            }
+            >a{
+                padding-left: 30px;
+                display: block;
+                color: #dee0e3; ;
+              }
+         }
+       }
+
+
+      }
+      .nav-right{
+        display: inline-block;
+        position: relative;
+        width: 992px;
+        height: 460px;
+        margin-left: -5px;
+        xmargin-top: 10px;
+        vertical-align: bottom;
+        left: -3px;
+      }
+    }
+
+
+
+
+    .nav-left li>ul{
+      position: absolute;
+      display: none;
+      left: 234px;
+      top: -20px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 6px 2px 11px 1px #b9bbbe;
+      height: 460px;
+      z-index: 99999;
+      li{
+        height: 76px;
+        width: 265px;
+        img{
+          padding: 15px 0 0 15px;
+        }
+        a{
+          display: flex;
+          align-items: center;
+          text-indent: 0.4em;
+          color: black;
+
+        }
+      }
+    }
+    .nav li>ul>li a:hover{
+      color: orange;
+    }
+
+    .nav-left>ul>li:nth-child(2)>ul{
+      top: -62px;
+    }
+    .nav-left>ul>li:nth-child(3)>ul{
+      top: -104px;
+    }
+    .nav-left>ul>li:nth-child(4)>ul{
+      top: -146px;
+    }
+    .nav-left>ul>li:nth-child(5)>ul{
+      top: -188px;
+    }
+    .nav-left>ul>li:nth-child(6)>ul{
+      top: -230px;
+    }
+    .nav-left>ul>li:nth-child(7)>ul{
+      top: -272px;
+    }
+    .nav-left>ul>li:nth-child(8)>ul{
+      top: -314px;
+    }
+    .nav-left>ul>li:nth-child(9)>ul{
+      top: -356px;
+    }
+    .nav-left>ul>li:nth-child(10)>ul{
+      top: -398px;
+    }
+
+    .nav-left li>ul>li:nth-child(n+7){
+      margin-left: 265px;
+    }
+    .nav-left li>ul>li:nth-child(6n+7){
+      margin-top: -460px;
+    }
+
+    .nav-left li>ul>li:nth-child(n+13){
+      margin-left: 530px;
+    }
+
+
+    .nav-left>ul>li:hover>ul{
+      display: block;
+    }
+
+
+
+
+    .nav-right input {
+      display: none;
+    }
+
+    .nav-right form {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .form label {
+      width: 10px;
+      height: 10px;
+
+    }
+
+    .pot {
+      width: 10000px;
+      height: 460px;
+      position: relative;
+      xtransition: 0.2s;
+      display: inline-block;
+      font-size: 0px;
+      xmargin-top: 35px;
+
+    }
+
+    .pot img {
+      /* position: absolute; */
+      width: 1000px;
+      height: 460px;
+      left: 100%;
+      z-index: 10;
+      xtransition: 0.2s;
+    }
+
+
+    form :nth-child(1):checked~.pot {
+      margin-left: 0;
+
+      transition: 1s;
+
+    }
+
+
+
+
+    form :nth-child(2):checked~.pot {
+      margin-left: -1005px;
+
+      transition: 1s;
+    }
+
+    form :nth-child(3):checked~.pot {
+      margin-left: -2010px;
+      transition: 1s;
+    }
+
+    form :nth-child(4):checked~.pot {
+
+      transition: 1s;
+      margin-left: -3015px;
+    }
+
+
+    /* form :nth-child(1):checked~.pot :nth-child(1),
+    form :nth-child(2):checked~.pot :nth-child(2),
+    form :nth-child(3):checked~.pot :nth-child(3),
+    form :nth-child(4):checked~.pot :nth-child(4) {
+      transition: 0.2s;
+      left: 0;
+
+    } */
+
+    .left-arrows,
+    .right-arrows {
+      width: 40px;
+      height: 80px;
+      position: absolute;
+      background-color: #bababa35;
+
+    }
+
+    label h1 {
+      margin: 0px;
+      line-height: 80px;
+    }
+
+    .left-arrows label,
+    .right-arrows label {
+      width: 40px;
+      height: 80px;
+      position: absolute;
+
+      line-height: 50px;
+      text-align: center;
+      display: none;
+      cursor: pointer;
+    }
+
+    .left-arrows {
+      top: calc(50% - 40px);
+      left: -3px;
+    }
+
+    .right-arrows {
+      top: calc(50% - 40px);
+      right: 0px;
+    }
+
+    form :nth-child(1):checked~.left-arrows :nth-child(4),
+    form :nth-child(1):checked~.right-arrows :nth-child(2),
+    form :nth-child(2):checked~.left-arrows :nth-child(1),
+    form :nth-child(2):checked~.right-arrows :nth-child(3),
+    form :nth-child(3):checked~.left-arrows :nth-child(2),
+    form :nth-child(3):checked~.right-arrows :nth-child(4),
+    form :nth-child(4):checked~.left-arrows :nth-child(3),
+    form :nth-child(4):checked~.right-arrows :nth-child(1) {
+      display: block;
+    }
+
+    .button {
+      position: absolute;
+      z-index: 1111;
+      width: 50px;
+      height: 30px;
+      right: 25px;
+      bottom: 0;
+      font-size: 0;
+
+    }
+
+    .button>label {
+      font-size: 18px;
+      width: 5px;
+      height: 5px;
+      display: inline-block;
+      border: 2px solid rgb(114, 114, 114);
+      border-radius: 10px;
+      background-color: rgb(226, 226, 226);
+      cursor: pointer;
+      margin: 0 3px;
+
+    }
+
+
+    form :nth-child(1):checked~.button :nth-child(1),
+    form :nth-child(2):checked~.button :nth-child(2),
+    form :nth-child(3):checked~.button :nth-child(3),
+    form :nth-child(4):checked~.button :nth-child(4) {
+      background-color: rgb(97, 98, 97);
+    }
+
+
+
+    label:hover {
+      background-color: #4e4d4d66;
+    }
+
+
+/* 服务 */
+
+    .frist{
+      width: 1226px;
+      margin: 14px auto 0 ;
+
+      text-decoration: none;
+
+    }
+
+    .frist-box1 ul,
+    .frist-box1{
+      width: 234px;
+      height: 170px;
+      font-size: 0px;
+      white-space: normal;
+      background-color: #958780;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .frist-box1 li{
+      text-align: center;
+      font-size: 12px;
+      display: inline-block;
+      width: 76px;
+      height: 82px;
+      border: 1px solid;
+      box-sizing: border-box;
+      padding-top:50px ;
+      border: 1px solid;
+      border-color: rgba(235, 197, 197, 0.24);
+      border-bottom: none;
+    }
+    .frist-box1 a{
+      padding-top: 40px;
+      color: rgb(214, 214, 214);
+    }
+
+
+    .frist-box2{
+      width: 970px;
+      height: 170px;
+      display: inline-block;
+      margin-left: 10px;
+    }
+
+    .frist-box2 li,
+    .frist-box2 img{
+      display: inline-block;
+      width: 316px;
+      height: 170px;
+      margin-left: 3px;
+      transition: 0.5s;
+    }
+    .frist-box2 img{
+      width: 306px;
+    }
+    .frist-box2 li{
+      padding-left: 7px;
+      overflow: hidden;
+    }
+    .frist-box2 li:hover{
+      box-shadow: 7px 4px 16px 1px #9d9a9a;
+    }
+
+    .img,
+    .img img{
+      width: 1226px;
+      height: 120px;
+      margin: 10px auto 0;
+    }
+
+
+    /* 商品盒子 */
+    .box {
+      width: 1226px;
+      margin: 10px auto;
+      white-space: nowrap;
+      font-size: 0px;
+      background-color: rgb(245, 245, 245);
+    }
+
+    .box-hd {
+      width: 1226px;
+      height: 58px;
+
+    }
+
+    .box-hd h1 {
+      width: 1140px;
+      height: 58px;
+      font-size: 22px;
+      font-weight: 400;
+      display: inline-block;
+      line-height: 58px;
+
+    }
+
+    .box-hd>div {
+      display: inline-block;
+      height: 58px;
+      width: 1226px;
+    }
+
+    .box-hd span {
+      font-size: 16px;
+      display: inline-block;
+    }
+
+    .box-left {
+      width: 248px;
+      height: 614px;
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: top;
+      box-shadow: 1px 1px 3px #a5a1a1;
+      transition: 0.5s;
+      background-color: rgb(255, 255, 255);
+    }
+
+
+    .box-right {
+      width: 992px;
+      height: 628px;
+      display: inline-block;
+
+    }
+
+    .box-right ul {
+      display: inline-block;
+      white-space: normal;
+
+    }
+
+    .box-right ul li,
+    .box-right ul a {
+      width: 234px;
+      height: 300px;
+      margin: 0 0 10px 10px;
+      display: inline-block;
+      overflow: hidden;
+      background-color: rgb(255, 255, 255);
+      text-align: center;
+      color: #050505;
+    }
+
+    .box-right ul li {
+      box-shadow: 1px 1px 3px #a5a1a1;
+      transition: 0.5s;
+      font-size: 13px;
+    }
+
+
+    .box-right ul li img {
+      display: inline-block;
+      width: 160px;
+      height: 160px;
+      padding: 30px 0 0 0;
+      color: #ffffff00;
+    }
+
+    .box-right ul li h3{
+      margin: 5px 0 0 0;
+      font-size: 14px;
+    }
+    .box-right ul li p{
+      margin: 10px 0 0 -3px;
+      font-size: 12px;
+    }
+    p:nth-last-of-type(2){
+      color: #a5a1a1;
+    }
+    p:nth-last-of-type(1){
+      color: orange;
+    }
+    .box-left:hover {
+      box-shadow: 1px 1px 15px #a5a1a1;
+      transform: translate(0px ,-2px);
+    }
+
+    .box-right ul li:hover {
+      box-shadow: 1px 1px 15px #a5a1a1;
+      transform: translate(0px ,-2px);
+    }
+
+
+
+
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <div class="diyiye" id="dinbu">
+      <div class="title">
+        <div class="top-box">
+
+          <div class="top">
+            <div class="top-box-1">
+              <a href="#">小米官网</a>
+              <span class="shu">|</span>
+              <a href="#">小米商城</a>
+              <span class="shu">|</span>
+              <a href="#">MIUI</a>
+              <span class="shu">|</span>
+              <a href="#">lot</a>
+              <span class="shu">|</span>
+              <a href="#">云服务</a>
+              <span class="shu">|</span>
+              <a href="#">天星科技</a>
+              <span class="shu">|</span>
+              <a href="#">有品</a>
+              <span class="shu">|</span>
+              <a href="#">小爱开放平台</a>
+              <span class="shu">|</span>
+              <a href="#">企业团购</a>
+              <span class="shu">|</span>
+              <a href="#">资质证照</a>
+              <span class="shu">|</span>
+              <a href="#">协议规则</a>
+              <span class="shu">|</span>
+              <a href="#">下载app</a>
+              <span class="shu">|</span>
+              <a href="#">select Location</a>
+            </div>
+            <div class="top-box-2">
+              <a href="#">登录</a>
+              <span class="shu">|</span>
+              <a href="#">注册</a>
+              <span class="shu">|</span>
+              <a href="#">消息通知</a>
+            </div>
+            <div class="top-box-3">购物车(0)</div>
+
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="bottom">
+        <div class="logo">
+          <a href="">
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi.com-assets/shop/img/logo-mi2.png" alt="">
+          </a>
+        </div>
+        <div class="bottom-box">
+          <div class="button-box">
+            <form action="" class="button1">
+              <input type="text">
+              <button>&#xe63A;</button>
+            </form>
+          </div>
+          <div class="bottom-nav">
+            <img src="" alt="">
+            <ul>
+              <li>
+                <a href="">xiaomi手机</a>
+                <div>
+                  <ul>
+                    <li><img src="" alt="">1</li>
+                    <li><img src="" alt="">1</li>
+                    <li><img src="" alt="">1</li>
+                    <li><img src="" alt="">1</li>
+                    <li><img src="" alt="">1</li>
+                    <li><img src="" alt="">1</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <a href="">redmi手机</a>
+                <div>
+                  <ul>
+                    <li><img src="" alt="">2</li>
+                    <li><img src="" alt="">2</li>
+                    <li><img src="" alt="">2</li>
+                    <li><img src="" alt="">2</li>
+                    <li><img src="" alt="">2</li>
+                    <li><img src="" alt="">2</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <a href="">电视</a>
+                <div>
+                  <ul>
+                    <li><img src="" alt="">3</li>
+                    <li><img src="" alt="">3</li>
+                    <li><img src="" alt="">3</li>
+                    <li><img src="" alt="">3</li>
+                    <li><img src="" alt="">3</li>
+                    <li><img src="" alt="">3</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <a href="">笔记本</a>
+                <div>
+                  <ul>
+                    <li><img src="" alt="">4</li>
+                    <li><img src="" alt="">4</li>
+                    <li><img src="" alt="">4</li>
+                    <li><img src="" alt="">4</li>
+                    <li><img src="" alt="">4</li>
+                    <li><img src="" alt="">4</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <a href="">平板</a>
+                <div>
+                  <ul>
+                    <li><img src="" alt="">6</li>
+                    <li><img src="" alt="">6</li>
+                    <li><img src="" alt="">6</li>
+                    <li><img src="" alt="">6</li>
+                    <li><img src="" alt="">6</li>
+                    <li><img src="" alt="">6</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <a href="">家电</a>
+                <div>
+                  <ul>
+                    <li><img src="" alt="">7</li>
+                    <li><img src="" alt="">7</li>
+                    <li><img src="" alt="">7</li>
+                    <li><img src="" alt="">7</li>
+                    <li><img src="" alt="">7</li>
+                    <li><img src="" alt="">7</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <a href="">路由器</a>
+                <div>
+                  <ul>
+                    <li><img src="" alt="">8</li>
+                    <li><img src="" alt="">8</li>
+                    <li><img src="" alt="">8</li>
+                    <li><img src="" alt="">8</li>
+                    <li><img src="" alt="">8</li>
+                    <li><img src="" alt="">8</li>
+                  </ul>
+                </div>
+
+              </li>
+
+              <li>
+                <a href="">服务中心</a>
+
+              </li>
+              <li>
+                <a href="">社区</a>
+
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+      <div class="nav">
+        <div class="nav-left">
+
+          <ul>
+            <li>
+
+              <a href="#">
+                手机
+              </a>
+              <ul>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+
+
+              </ul>
+
+            </li>
+            <li>
+              <a href="#">
+                电视
+              </a>
+              <ul>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">家电</a>
+              <ul>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+
+
+              </ul>
+            </li>
+            <li><a href="#">
+                笔记本 平板</a>
+              <ul>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+
+
+
+              </ul>
+            </li>
+            <li>
+              <a href="#">出现 穿戴</a>
+              <ul>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+
+
+              </ul>
+            </li>
+            <li>
+              <a href="#">耳机 音响</a>
+              <ul>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+
+
+              </ul>
+            </li>
+            <li>
+
+              <a href="#">健康 儿童</a>
+              <ul>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+
+
+              </ul>
+            </li>
+            <li>
+
+              <a href="#">生活 箱包</a>
+              <ul>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+
+
+              </ul>
+            </li>
+            <li>
+
+              <a href="#">智能 路由器</a>
+              <ul>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+
+
+              </ul>
+
+            </li>
+            <li>
+              <a href="#">电源 配件</a>
+              <ul>
+                <li>
+
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecfbf9d01c8a2605f0a6938093b23ad8.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    <span>xiaomI MIX系列</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img
+                      src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa3954f817a23443c0b6b523ebbd09f6.png?thumb=1&w=50&h=50&f=webp&q=90"
+                      alt="">
+                    小米拍拍4K高清投屏器
+
+                  </a>
+                </li>
+
+
+
+
+              </ul>
+            </li>
+          </ul>
+
+
+          </a>
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="nav-right">
+          <form action="">
+
+
+            <input type="radio" name="ckb" value="" class="ckb1" id="ckb1" checked>
+
+            <input type="radio" name="ckb" value="" class="ckb2" id="ckb2">
+
+            <input type="radio" name="ckb" value="" class="ckb3" id="ckb3">
+
+            <input type="radio" name="ckb" value="" class="ckb4" id="ckb4">
+
+            <div class="pot">
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/08a9d7eec7b055bac247b5068f817b1d.jpg?thumb=1&w=1149&h=431&f=webp&q=90"
+                alt="">
+              <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d7c21d01bbe93eafc7d07d3796a3c59c.jpg?thumb=1&w=1149&h=431&f=webp&q=90
+              " alt="">
+
+              <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6494adc68900269b551de5ba96bd10a9.jpg?thumb=1&w=1149&h=431&f=webp&q=90
+                " alt="">
+
+              <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0d03df40a5e8ef760731a8f4f3f61172.jpg?w=2452&h=920"
+                alt="">
+
+            </div>
+
+            <div class="left-arrows">
+
+              <label for="ckb1">
+                <h1>&#xe628;</h1>
+              </label>
+              <label for="ckb2">
+                <h1>&#xe628;</h1>
+              </label>
+              <label for="ckb3">
+                <h1>&#xe628;</h1>
+              </label>
+              <label for="ckb4">
+                <h1>&#xe628;</h1>
+              </label>
+            </div>
+
+            <div class="right-arrows">
+
+              <label for="ckb1">
+                <h1>&#xe623; </h1>
+              </label>
+
+              <label for="ckb2">
+
+                <h1>&#xe623; </h1>
+              </label>
+
+              <label for="ckb3">
+                <h1>&#xe623; </h1>
+              </label>
+
+              <label for="ckb4">
+                <h1>&#xe623; </h1>
+              </label>
+            </div>
+
+            <div class="button">
+
+              <label for="ckb1"></label>
+              <label for="ckb2"></label>
+              <label for="ckb3"></label>
+              <label for="ckb4"></label>
+            </div>
+          </form>
+
+        </div>
+
+
+      </div>
+
+      <div class="frist">
+        <div class="frist-box1">
+          <ul>
+            <li><a href="#">保障服务</a></li>
+            <li><a href="#">米粉卡</a></li>
+            <li><a href="#">企业团购</a></li>
+            <li><a href="#">以旧换新</a></li>
+            <li><a href="#">F码通道</a></li>
+            <li><a href="#">话费充值</a></li>
+          </ul>
+        </div>
+        <div class="frist-box2">
+          <ul>
+            <li>
+              <a href="#">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0cf5e958bc88727b50c5c5fba7a8f47a.jpg?w=632&h=340">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6dd2f3e0de4e6cbba98fd3799cfa5bf7.jpg?w=632&h=340">
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d7d4be1a9e701e16de498f89b1865867.jpg?w=632&h=340">
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="dierye">
+      <div class="img">
+        <a href="#">
+          <img
+            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0e9ef2e2599559a625a07becb510fe31.jpg?thumb=1&w=1533&h=150&f=webp&q=90"
+            alt="">
+        </a>
+      </div>
+
+      <div class="box">
+        <div class="box-hd">
+          <div>
+            <h1>手机</h1>
+            <div>
+              <span><a href="#">查看更多</a></span>
+            </div>
+          </div>
+
+        </div>
+        <div class="box-left">
+          <a href="#"><img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d91bb6cf7da0947e8a6e50e03f4daf06.jpg?thumb=1&w=219&h=576&f=webp&q=90"
+              alt=""></a>
+        </div>
+        <div class="box-right">
+          <ul>
+            <li>
+              <a href="#">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8b046feca0a7bb3f7b961a9690babb1b.jpg?thumb=1&w=188&h=188&f=webp&q=90"
+                  alt="">
+                <h3>Redmi Not 12 Turbo</h3>
+                <p>狂暴引擎超强性能释放</p>
+                <p>1999起</p>
+              </a>
+
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-hd">
+          <div>
+            <h1>手机</h1>
+            <div>
+              <span><a href="#">查看更多</a></span>
+            </div>
+          </div>
+
+        </div>
+        <div class="box-left">
+          <a href="#"><img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d91bb6cf7da0947e8a6e50e03f4daf06.jpg?thumb=1&w=219&h=576&f=webp&q=90"
+              alt=""></a>
+        </div>
+        <div class="box-right">
+          <ul>
+            <li>
+              <a href="#">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8b046feca0a7bb3f7b961a9690babb1b.jpg?thumb=1&w=188&h=188&f=webp&q=90"
+                  alt="">
+                <h3>Redmi Not 12 Turbo</h3>
+                <p>狂暴引擎超强性能释放</p>
+                <p>1999起</p>
+              </a>
+
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-hd">
+          <div>
+            <h1>手机</h1>
+            <div>
+              <span><a href="#">查看更多</a></span>
+            </div>
+          </div>
+
+        </div>
+        <div class="box-left">
+          <a href="#"><img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d91bb6cf7da0947e8a6e50e03f4daf06.jpg?thumb=1&w=219&h=576&f=webp&q=90"
+              alt=""></a>
+        </div>
+        <div class="box-right">
+          <ul>
+            <li>
+              <a href="#">
+                <img
+                  src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8b046feca0a7bb3f7b961a9690babb1b.jpg?thumb=1&w=188&h=188&f=webp&q=90"
+                  alt="">
+                <h3>Redmi Not 12 Turbo</h3>
+                <p>狂暴引擎超强性能释放</p>
+                <p>1999起</p>
+              </a>
+
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+<script src="./less.js"></script>
+
+</html>
