@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Document</title>
+<style> 
+* {background:#0001;
+  box-shadow:
+ inset 0 0 1px red;
+} html { zoom: 2;}
+
+/* 方案一
+内外元素都要写宽高
+里面元素必须要比外面元素小
+*/
+.c1 {
+  xwidth: 200px;
+  xheight: 100px;
+  position: relative;
+}
+.c1 section {
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+
+/* 
+里外都不用写宽高
+里面的元素可以比外面元素大
+*/
+.c2 {
+  position: relative;
+}
+.c2 section {
+  background-color: pink;
+  position: absolute;
+  left: 50%;/*包含块的50%*/
+  top: 50%;
+  height: 100px;
+  transform: translate(-50%, -50%);/*自身宽度的50%*/
+}
+
+
+/* 
+里面不能放其他元素
+里面元素要比外面元素小
+也可以说成是多行文本垂直居中
+*/
+
+.c3 {
+  height: 160px;
+  xline-height: 100px;
+  font-size: 0;
+  text-align: center;
+}
+.c3::before {
+  xwidth: 5px;
+  content: 'a';
+  background-color: red;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.c3 section {
+  line-height: normal;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.c4 {
+  display: table-cell;
+  height: 100px;
+  width: 100px;
+  vertical-align: middle;
+  text-align: center;
+}
+.c4 section {
+  width: 60%;
+  margin: auto;
+}
+
+/* 
+只需要设置父元素
+常规流
+里面元素可以比外面大
+*/
+.c5 {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c5 section {
+  xmargin: auto;
+}
+
+</style>
+</head>
+<body>
+  
+  <div class="c1">
+    <section>foo</section>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione blanditiis consequuntur voluptate error, reprehenderit at. Fugit deleniti, aliquid deserunt nihil, atque corrupti eum rem totam, est facilis nesciunt, ullam tenetur.
+  </div>
+  
+  <div class="c2">a
+    a a a
+    <section>fooaaa bar</section>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptatibus tempore odit, numquam natus, eaque velit provident ducimus ipsum maxime fugit nostrum error voluptate minima quos ipsam aliquid sunt. Quia.
+  </div>
+  
+  <div class="c3">
+    <section>aaa abbb ccc sdfwe wef  <br>
+    sfowe lorem wef</section>
+  </div>
+
+  <div class="c4">
+    <span>aa</span>
+  </div>
+  
+  
+  <div class="c5">
+    <section>aaaaaaaa</section>
+  </div>
+  
+  
+  
+  
+  
+  
+</body>
+</html>
