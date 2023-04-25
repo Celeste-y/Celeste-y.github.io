@@ -62,8 +62,8 @@ console.log(b.toFixed(5))
 </script>
 
 <script  id="ch0103/09">
-var r = + prompt('r')
-console.log((r * 2).toFixed(5),(2 * 3.14159 * r).toFixed(5) , (3.14159 * r * r).toFixed(5))
+var r = +prompt('r')
+console.log((r * 2).toFixed(5),(2 * 3.14159 * r).toFixed(5),(3.14159 * r * r).toFixed(5))
 </script>
 
 <script  id="ch0103/10">
@@ -81,13 +81,13 @@ console.log(c.toFixed(4))
 </script>
 
 <script  id="ch0103/12">
-var r = prompt('r')
+var r = +prompt('r')
 var V = 4 / 3 * Math.PI * r ** 3
 console.log(V.toFixed(2))
 </script>
 
 <script  id="ch0103/13">
-var a = prompt('a')
+var a = +prompt('a')
 var b = a % 10
 var c = (a - a % 10) / 10 % 10
 var d = (a - b - (c * 10)) / 100 % 10
