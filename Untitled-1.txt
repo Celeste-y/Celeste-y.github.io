@@ -1,0 +1,27 @@
+<script>
+  var a = 1
+  var b = 2
+  var c = 1
+
+  var delta = b * b - 4 * a * c
+  var sqrt_delta = Math.sqrt(delta)
+
+  var x1 = (-b + sqrt_delta) / (2 * a)
+  var x2 = (-b - sqrt_delta) / (2 * a)
+
+  console.log(x1, x2)
+</script>
+
+
+<script>
+
+  var a = 1
+  var b = 2
+  var c = 1
+  var d = 1
+  var e = 82
+  var f = 3
+
+var x = (c * d - b * f) / (a * e - b * d)
+var y = (c 
+</script>
