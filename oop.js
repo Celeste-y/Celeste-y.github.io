@@ -57,32 +57,6 @@ class Stack {
     this.head = null
     this.len = 0
   }
-  push(val) {
-    var node = { val: val, next: null }
-    if (this.head == null) {
-      this.head = node
-      this.len++
-      return this
-    }
-    else {
-      var p = this.head
-      this.head = node
-      node.next = p
-      this.len++
-      return this
-    }
-  }
-  pop() {
-    if (this.head != null) {
-      var p = this.head
-      this.head = this.head.next
-      this.len--
-      return p.val
-    }
-  }
-  get size() {
-    return this.len
-  }
 }
 
 
