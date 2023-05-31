@@ -51,11 +51,36 @@ class Complex {
   }
 }
 
-
 class Stack {
   constructor() {
     this.head = null
     this.len = 0
+  }
+  push(val) {
+    var node = { val: val, next: null }
+    if (this.head == null) {
+      this.head = node
+      this.len++
+      return this
+    }
+    else {
+      var p = this.head
+      this.head = node
+      node.next = p
+      this.len++
+      return this
+    }
+  }
+  pop() {
+    if (this.head != null) {
+      var p = this.head
+      this.head = this.head.next
+      this.len--
+      return p.val
+    }
+  }
+  get size() {
+    return this.len
   }
 }
 
@@ -67,6 +92,38 @@ class Queue {
     this.tail = null
     this.len = 0
   }
+  add(val) {
+    var node = {
+      val: val,
+      next: null
+    }
+    if (this.head == null) {
+      this.head = node
+      this.tail = node
+      this.len++
+    }
+    else {
+      this.tail.next = node
+      this.tail = node
+      this.len++
+    }
+  }
+  pop() {
+    if (this.head == null) {
+      return
+    }
+    var p = this.head
+    this.head = this.head.next
+    p.next = null
+    if (this.head == null) {
+      this.tail = null
+    }
+    this.len--
+    return p.val
+  }
+  get size() {
+    return this.len
+  }
 }
 
 
@@ -76,13 +133,95 @@ class LinkedList {
     this.tail = null
     this.len = 0
   }
+  append(val) {
+    var node = { val: val, next: null }
+    if (this.head == null) {
+      this.head = node
+      this.tail = node
+      this.len++
+      return this
+    }
+    else {
+      this.tail.next = node
+      this.tail = node
+      this.len++
+      return this
+    }
+  }
+  prepend(val) {
+    var node = { val: val, next: null }
+    if (this.head == null) {
+      this.head = node
+      this.tail = node
+      this.len++
+      return this
+    }
+    else {
+      var p = this.head
+      node.next = this.head
+      this.head = node
+      this.len++
+      return this
+    }
+  }
+  at(idx) {
+    var a = 0
+    var p = this.head
+    while (a < idx) {
+      p = p.next
+      a++
+    }
+    return p.val
+  }
+  get size() {
+    return this.len
+  }
 }
+
 
 class MyMap {
   constructor() {
     this.length = 0
     this.keys = []
     this.vals = []
+  }
+  set(key, val) {
+    if (this.keys.includes(key)) {
+      var a = this.keys.indexOf(key)
+      this.vals[a] = val
+      return this
+    }
+    else {
+      this.keys.push(key)
+      this.vals.push(val)
+      this.length++
+      return this
+    }
+  }
+  get(key) {
+    if (this.has(key)) {
+      var a = this.keys.indexOf(key)
+      return this.vals[a]
+    }
+  }
+  has(key) {
+    if (this.keys.includes(key)) {
+      return true
+    }
+    return false
+  }
+  delete(key) {
+    if (this.has(key)) {
+      var a = this.keys.indexOf(key)
+      this.keys.splice(a, 1)
+      this.vals.splice(a, 1)
+      this.length--
+      return true
+    }
+    return false
+  }
+  get size() {
+    return this.length
   }
 }
 
@@ -91,5 +230,32 @@ class MySet {
   constructor() {
     this.arr = []
     this.len = 0
+  }
+  add(key) {
+    if (this.has(key)) {
+      return
+    }
+    else {
+      this.arr.push(key)
+      this.len++
+      return this
+    }
+  }
+  delete(key) {
+    if (this.has(key)) {
+      var a = this.arr.indexOf(key)
+      this.arr.splice(a, 1)
+      this.len--
+      return this
+    }
+  }
+  has(key) {
+    if (this.arr.includes(key)) {
+      return true
+    }
+    return false
+  }
+  get size() {
+    return this.len
   }
 }
