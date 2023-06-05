@@ -1,44 +1,47 @@
 var celeste_y = {
   chunk: function (ary, size) {
-    var result = []
-    for (var i = 0; i < ary.length; i += size) {
+    let result = []
+    for(i = 0; i < ary.length; i += size){
       result.push(ary.slice(i, i + size))
     }
     return result
   },
-
-  compact: function (array) {
-    var result = []
-    for (var items of array) {
-      if (items) {
-        result.push(items)
+  compact: function(ary){
+    let result = []
+    for(i = 0; i < ary.length; i++){
+      if(ary[i] !== 0 && ary[i] !== null && ary[i] !== undefined && !isNaN(ary[i]) && ary[i] !== "" && ary[i] !== false){
+        result.push(ary.at(i))
       }
     }
     return result
   },
-
-  concat : function (array,...val){
-    var result = array
-    for(var i = 0;i<val.length;i++){
-      if(Array.isArray(val[i])){
-        for(var j = 0;j<val[i].length;j++){
-          result.push(val[i][j])
+  concat: function(...args){
+    let result = []
+    for(i = 0; i < args.length; i++){
+      result = result.concat(args[i])
+    }
+    return result
+  },
+  difference: function(...args){
+    let nums1 = args[0], arr = []
+    for(let i = 0; i < nums1.length; i++){
+      for(let j = 1; j < args.length; j++){
+        if(args[j].indexOf(nums1[i]) !== -1){
+          // arr.push(nums1[i])
+          break
         }
-      }else{
-        result.push(val[i])
+        if(j == args.length - 1){
+          arr.push(nums1[i])
+        }
       }
     }
-    return result
+    return arr
   },
-
-  difference : function (array,...val){
-    val = this.flattenDeep(val)
-    for(var i=0;i<val.length ;i++){
-      var a = array.filter(it => it !== val[i])
-      array = a
+  fill: function(ary, val, start = 0, end = ary.length){
+    for(i = start; i < end; i++){
+      ary[i] = val
     }
-     return a
+    return ary
   },
-
   
 }
