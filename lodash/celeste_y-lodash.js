@@ -124,4 +124,46 @@ var celeste_y = {
     }
     return ary
   },
+  fromPairs: function(ary){
+    let map = {}
+    for(let i = 0; i < ary.length; i++){
+      if(!(ary[i][0] in map)){
+        map[ary[i][0]] = ary[i][1]
+      }
+    }
+    return map
+  },
+  toPairs: function(obj){
+    return Object.entries(obj)
+  },
+  head: function(ary){
+    if(ary){
+      return ary[0]
+    }else{
+      return undefined
+    }
+  },
+  indexOf: function(ary, val, idx = 0){
+    for(let i = 0; i < ary.length; i++){
+      if(idx < 0 || idx > ary.length - 1){
+        if(ary[i] == val){
+          return i
+        }
+      }
+      if(ary[i + idx] == val){
+        return i + idx
+      }
+    }
+  },
+  lastIndexOf: function(ary, val, idx = ary.length - 1){
+    for(let i = idx; i >= 0; i--){
+      if(ary[i] == val){
+        return i
+      }
+    }
+    return -1
+  },
+  initial: function(ary){
+    return ary.slice(0, ary.length - 1)
+  },
 }
