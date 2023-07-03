@@ -166,4 +166,19 @@ var celeste_y = {
   initial: function(ary){
     return ary.slice(0, ary.length - 1)
   },
+  pull: function(ary, ...args){
+    for(i = 0; i < args.length; i++){
+      while(ary.indexOf(args[i]) !== -1){
+        ary.splice(ary.indexOf(args[i]), 1)
+      }
+    }
+    return ary
+  },
+  reverse: function(ary){
+    let result = []
+    for(i = ary.length - 1; i >= 0; i--){
+      result.push(ary[i])
+    }
+    return result
+  },
 }
